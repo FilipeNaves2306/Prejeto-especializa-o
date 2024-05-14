@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.header {
+    width: 100%;
+    background-color: darkgray;
+    position: fixed;
+}
+
+.Titulo {
+    font-size: 20pt;
+    color: #333FFF; 
+    font-style: italic;
+}
+
+.logo-redes-sociais {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.redes-sociais {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+}
+
+.menu {
+    border: 1px solid black;
+    float: left;
+    width: 100%;
+    background-color: darkgray;
+}
+
+.menu li {
+    float: left;
+    border-right: 1px solid black;
+    list-style: none;
+}
+
+.menu li a {
+    color: black;
+    padding: 5px 10px;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.menu li a:hover {
+    color: blue;
+}
+
+.contenido {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 110px;
+}
+
+.contenido-texto {
+    flex: 1;
+    height: auto;
+    margin: 0;
+    font-size: 16px;
+    color: black;
+}
+
+.contenido p {
+    font-family: Arial, sans-serif; 
+    margin: 10px;
+}
+
+.contenido h1 {
+    font-size: 20px; 
+    color: #333FFF; 
+}
+
+.contenido h2 {
+    font-size: 15px; 
+    color: #B8B9C4; 
+}
+
+.imagene {
+    margin-top: 20px;
+    margin-left: 20px;
+    flex: 0 0 300px;
+}
+
+.table-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table-container table {
+    border: 1px solid green;
+    text-align: center;
+    margin: auto;
+}
+
+.table-container tbody {
+    padding: 10px;
+}
+
+.table-container th {
+    border: 1px solid green;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.table-container td {
+    border: 1px solid green;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.footer {
+    background-color: black;
+    margin: 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a {
+    color: aliceblue;
+    font-style: italic;
+    font-size: 15pt;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .contenido {
+        flex-flow: column nowrap; 
+    }
+
+    .imagene {
+        margin-top: 20px;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 300px; 
+        height: 300px; 
+    }
+
+    .table-container {
+        width: 100%; 
+        overflow-x: auto; 
+    }
+}
+
+
